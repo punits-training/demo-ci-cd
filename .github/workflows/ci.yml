@@ -85,7 +85,7 @@ jobs:
       # Download and pack the code
       - name: Upload artifact
         if: ${{ success() }}
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: my-test-artifact
           path: dist/
