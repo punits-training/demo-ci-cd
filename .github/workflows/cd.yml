@@ -19,7 +19,7 @@ jobs:
       url: https://${{ env.BASE_URL }}.production.company
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Determine base url
         id: determine_url
@@ -34,7 +34,7 @@ jobs:
       # Download and pack the code
       - name: Upload artifact
         if: ${{ success() }}
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: my-node-artifact
           path: dist/
