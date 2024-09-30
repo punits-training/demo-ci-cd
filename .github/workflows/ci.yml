@@ -3,7 +3,7 @@ name: CI
 # Trigger CI for every PR event, when PR has target branch = main
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ main ] 
 
 jobs:
   # The first job lints the code base
